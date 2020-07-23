@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+   android:orientation="vertical"
+
+
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_weight="10"
+       android:orientation="vertical">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:divider="?android:dividerVertical"
+
+           android:dividerPadding="50dp"
+
+           android:showDividers="middle"
+
+
+           android:orientation="horizontal">
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_weight="50"
+
+               android:orientation="vertical">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="Team A"
+
+                   android:textSize="30sp" />
+
+               <TextView
+                   android:id="@+id/text1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="0"
+                   android:textSize="50sp" />
+
+               <Button
+                   android:id="@+id/add1a"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:onClick="add1"
+                   android:text="+1" />
+
+               <Button
+                   android:id="@+id/add1b"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:onClick="add11"
+                   android:text="+2" />
+
+               <Button
+                   android:id="@+id/add1c"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:onClick="add111"
+
+                   android:text="+3" />
+
+
+           </LinearLayout>
+
+
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_weight="50"
+
+               android:orientation="vertical">
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Team B"
+                   android:gravity="center"
+
+                   android:textSize="30sp"/>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="0"
+                   android:textSize="50sp"
+                   android:gravity="center"
+                   android:id="@+id/text2"/>
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="+1"
+                   android:onClick="add2"
+
+                   android:id="@+id/add2a"/>
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="+2"
+                   android:onClick="add22"
+
+                   android:id="@+id/add2b"/>
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="+3"
+                   android:onClick="add222"
+
+                   android:id="@+id/add2c"/>
+           </LinearLayout>
+       </LinearLayout>
+   </LinearLayout>
+
+
+
+
+
+
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_weight="30"
+       android:orientation="vertical"
+       >
+
+
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:id="@+id/reset"
+
+           android:text="Reset" />
+
+   </LinearLayout>
+
+
+
+
+</LinearLayout>
